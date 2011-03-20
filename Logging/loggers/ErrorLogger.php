@@ -4,7 +4,7 @@
  * 
  * @author bartstroeken
  * @package Practisse Utilities
- * @subpackage Logger
+ * @subpackage LoggingUtil
  */
 class ErrorLogger extends BaseLogger {
 	

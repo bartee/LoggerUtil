@@ -29,7 +29,7 @@
  * @license General Public License
  * @author Bart Stroeken
  * @package Practisse Utilities
- * @subpackage Logger
+ * @subpackage LoggingUtil
  */
 date_default_timezone_set('Europe/Amsterdam');
 if (!defined('LOG_DIR')){

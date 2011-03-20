@@ -3,13 +3,13 @@ This Logger is a generic Logging service, to be able to write notes to a file.
 
 Usage: 
 - Download and unzip all in your project.
-- In files where you want to use the logger, require this file.
+- In files where you want to use the logger, require the file logging.php from the util's basedir.
 - Use LogFactory::get(loggername)->log(yourmessage);
 - Each message will be prepended with a timestamp. 
 - The log can be autorotated, if you define the constant
 
 CONSTANTS
-All constants are defaulted within the current file.
+All constants are defaulted within logging.php
 - LOGGING_BASEDIR - Basedir for the Logging-utility codebase.    
 - LOG_DIR - the dir where all logs are written to. Should be 0777. Defaults to $_SERVER{'DOCUMENT_ROOT'].'/logs/';
 - LOGGING_ACTIVE - if set to false, all logging will be disabled. Useful for generic speedups
@@ -25,7 +25,8 @@ EXTENDING
 You can extend the BaseLogger to create your own logfiles. For an example, see the AccessLogger. 
 Copy that file AND class to something matching your requirements and enter your own filename.
 
+
 @license General Public License
 @author Bart Stroeken
 @package Practisse Utilities
-@subpackage Logger
+@subpackage LoggingUtil

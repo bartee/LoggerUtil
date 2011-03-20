@@ -5,7 +5,7 @@
  * 
  * @author Bart Stroeken
  * @package Practisse Utilities
- * @subpackage Logger
+ * @subpackage LoggingUtil
  */
 class LogFactory {
 	
