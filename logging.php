@@ -37,6 +37,6 @@ if (!defined('LOG_DIR')){
 }
 define('LOGGING_BASEDIR', dirname(__FILE__));
 define('LOGGING_ACTIVE', true);
-define('LOG_ROTATION_INTERVAL', 'size:1024');
+define('LOG_ROTATION_INTERVAL', 'week');
 
 require_once LOGGING_BASEDIR.'/Logging/LogFactory.php';

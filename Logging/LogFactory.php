@@ -31,13 +31,13 @@ class LogFactory {
 		if (!is_array(self::$_loggers)){
 			self::$_loggers = array();
 			
-			include_once LOGGING_BASEDIR.'/logging/loggers/BaseLogger.php';
+			include_once LOGGING_BASEDIR.'/Logging/loggers/BaseLogger.php';
 			self::$_loggers['BaseLogger'] = new BaseLogger();
 		}
 		if (!key_exists($name, self::$_loggers)){
 			try { 
 
-				include_once LOGGING_BASEDIR.'/logging/loggers/'.$name.'.php';
+				include_once LOGGING_BASEDIR.'/Logging/loggers/'.$name.'.php';
 				self::$_loggers[$name] = new $name;
 			} catch(Exception $e) {
 				return self::$_loggers['BaseLogger'];
